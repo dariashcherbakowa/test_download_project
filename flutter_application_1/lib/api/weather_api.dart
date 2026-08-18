@@ -1,11 +1,10 @@
 import 'dart:convert';
 import 'dart:developer';
 import 'package:flutter_application_1/models/weather_forecast_daily.dart';
-import 'package:flutter_application_1/utilities/constans.dart';
+import 'package:flutter_application_1/utilities/constants.dart';
 import 'package:http/http.dart' as http;
 
 class WeatherApi {
-  // Метод для запроса по городу (с преподавателем)
   Future<WeatherForecast> fetchWeatherForecastWithCity({
     required String cityName,
   }) async {
@@ -34,7 +33,6 @@ class WeatherApi {
     }
   }
 
-  // ⬇️ ДОБАВЬ ЭТОТ МЕТОД
   Future<WeatherForecast> fetchWeatherForecast({
     required String cityName,
   }) async {

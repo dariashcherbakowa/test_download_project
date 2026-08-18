@@ -27,7 +27,7 @@ import 'package:flutter_application_1/utilities/constans.dart';
 class WeatherForecast {
   City? city;
   String? cod;
-  double? message;
+  num? message; // ← исправлено: double? → num?
   int? cnt;
   List<WeatherList>? list;
 
@@ -102,8 +102,8 @@ class City {
 }
 
 class Coord {
-  double? lon;
-  double? lat;
+  num? lon; // ← исправлено: double? → num?
+  num? lat; // ← исправлено: double? → num?
 
   Coord({this.lon, this.lat});
 
